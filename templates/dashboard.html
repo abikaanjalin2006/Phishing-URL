@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Welcome, {{ current_user.username }} 🌸</h2>
+
+<div class="dashboard-grid">
+    <a href="/check">
+        <div class="card-btn">🔍 Check URL</div>
+    </a>
+
+    <a href="/history">
+        <div class="card-btn">📜 History</div>
+    </a>
+
+    <a href="/analytics">
+        <div class="card-btn">📊 Analytics</div>
+    </a>
+
+    <a href="/logout">
+        <div class="card-btn">🚪 Logout</div>
+    </a>
+</div>
+
+{% endblock %}

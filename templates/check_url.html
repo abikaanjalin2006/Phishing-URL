@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Check URL</h2>
+<form method="post">
+<input name="url" placeholder="Enter URL" required>
+<button>Check</button>
+</form>
+{% if result %}
+<h3>Result: {{ result }}</h3>
+{% endif %}
+<a href="/dashboard">Back</a>
+{% endblock %}

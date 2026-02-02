@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Analytics</h2>
+<ul>
+{% for result, count in stats %}
+<li>{{ result }} : {{ count }}</li>
+{% endfor %}
+</ul>
+<a href="/dashboard">Back</a>
+{% endblock %}
